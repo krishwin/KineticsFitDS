@@ -15,4 +15,5 @@ python-dotenv
 tqdm
 bertopic
 clean-text
-sqlite3
+dotenv
+google-api-python-client
