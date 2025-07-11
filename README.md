@@ -1,4 +1,4 @@
-# 🏋️‍♂️ FitLabeler: YouTube Fitness Video Classification Pipeline
+# 🏋️‍♂️ KineticsFitDS: An Attempt to create a Large Webscale DataSet for Fitness video clips similar to Kinetics400 but specific to fitness from YouTube Fitness Videos
 
 An end-to-end pipeline for discovering, filtering, labeling, and analyzing YouTube videos related to **home fitness**, powered by NLP, Argilla, and BERT. This tool helps automatically classify relevant videos and extract trending topics from them.
 
