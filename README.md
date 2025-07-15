@@ -48,9 +48,9 @@ An end-to-end pipeline for discovering, filtering, labeling, and analyzing YouTu
 
 ## 🧰 Tech Stack
 
-- **YouTube Data API** – Channel/video search
+- **YouTube Data API** – Channel/video search ( You will need youtube apikey  . refer https://developers.google.com/youtube/v3/docs for steps to get api key)
 - **yt-dlp** – Video metadata extraction
-- **Argilla** – Manual labeling interface
+- **Argilla** – Manual labeling interface ( Refer https://docs.argilla.io/latest/getting_started/quickstart/ for setting up argilla locally via docker or use Huggingface Spaces)
 - **Hugging Face Transformers** – BERT classifier
 - **scipy / langdetect** – Language filtering
 - **BERTopic** – Topic modeling of classified fitness videos
