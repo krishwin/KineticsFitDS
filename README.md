@@ -1,7 +1,7 @@
 # 🏋️‍♂️ KineticsFitDS: An Attempt to create a Large Webscale DataSet for Fitness video clips similar to Kinetics400 but specific to fitness from YouTube Fitness Videos
 
 An end-to-end pipeline for discovering, filtering, labeling, and analyzing YouTube videos related to **home fitness**, powered by NLP, Argilla, and BERT. This tool helps automatically classify relevant videos and extract trending topics from them.
-
+i have also published the dataset in kaggle https://www.kaggle.com/datasets/krishnwin/yt-fitness-v1
 ---
 
 ## 🔄 Pipeline Overview
@@ -48,9 +48,9 @@ An end-to-end pipeline for discovering, filtering, labeling, and analyzing YouTu
 
 ## 🧰 Tech Stack
 
-- **YouTube Data API** – Channel/video search
+- **YouTube Data API** – Channel/video search ( You will need youtube apikey  . refer https://developers.google.com/youtube/v3/docs for steps to get api key)
 - **yt-dlp** – Video metadata extraction
-- **Argilla** – Manual labeling interface
+- **Argilla** – Manual labeling interface ( Refer https://docs.argilla.io/latest/getting_started/quickstart/ for setting up argilla locally via docker or use Huggingface Spaces)
 - **Hugging Face Transformers** – BERT classifier
 - **scipy / langdetect** – Language filtering
 - **BERTopic** – Topic modeling of classified fitness videos
@@ -74,13 +74,11 @@ An end-to-end pipeline for discovering, filtering, labeling, and analyzing YouTu
 4. **`dataset_load.ipynb`**  
    *Load video data from the database, push to Argilla for manual labeling, and manage Argilla datasets.*
 
-5. **`bert_data_prepare.ipynb`**  
-   *Prepare labeled data from Argilla for BERT training (cleaning, splitting, etc).*
-
-6. **`bert_classification_train.ipynb`**  
+5. **`bert_classification_train.ipynb`**  
    *Train a BERT model for fitness video classification using the labeled dataset.*
 
-7. **`bertopic_analysis.ipynb`**  
+6. **`bertopic_analysis.ipynb`**
+   * Run yt-embeddings.ipynb first to get the embeddings then run bertopic_analysis.ipynb
    *Run BERTopic on classified fitness videos to extract and visualize trending topics.*
 
 ---
