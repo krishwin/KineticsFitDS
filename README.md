@@ -74,13 +74,11 @@ i have also published the dataset in kaggle https://www.kaggle.com/datasets/kris
 4. **`dataset_load.ipynb`**  
    *Load video data from the database, push to Argilla for manual labeling, and manage Argilla datasets.*
 
-5. **`bert_data_prepare.ipynb`**  
-   *Prepare labeled data from Argilla for BERT training (cleaning, splitting, etc).*
-
-6. **`bert_classification_train.ipynb`**  
+5. **`bert_classification_train.ipynb`**  
    *Train a BERT model for fitness video classification using the labeled dataset.*
 
-7. **`bertopic_analysis.ipynb`**  
+6. **`bertopic_analysis.ipynb`**
+   * Run yt-embeddings.ipynb first to get the embeddings then run bertopic_analysis.ipynb
    *Run BERTopic on classified fitness videos to extract and visualize trending topics.*
 
 ---
